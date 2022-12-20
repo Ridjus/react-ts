@@ -28,7 +28,6 @@ plugins:
   - prettier
 rules:
   import/no-default-export: error
-  import/no-unresolved:
   import/order:
     - error
     - groups:
@@ -43,7 +42,9 @@ rules:
       alphabetize:
         order: asc
         caseInsensitive: true
-  linebreak-style: off
+  linebreak-style:
+    - off
+    - windows
   react/react-in-jsx-scope: off
   react/prop-types: error
   react-hooks/rules-of-hooks: error
